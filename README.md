@@ -4,6 +4,10 @@
 GoStock is a simple service that were built to access the Stock Market and query
 data about all Tickers listed on nasdaq.
 
+## Requirements:
+
+* Python 3+
+* Go (Most recent version).
 
 ## Thecnical detail
 
@@ -29,9 +33,15 @@ On this time, other filters are applied.
 * Buy Recommendations - We get all recommendations for this ticker in a date range and count how many `buy` recommendations we have.
 * Sustainability - The user can say the minimum value of the Sustainability that they accept.
 
-## Usage
+## Usage - Installation
 
-You can just run:
+First, you need to Install the yfinance, *a lib built in Python that will be used below on second step*:
+
+```bash
+pip install yfinance
+```
+
+So you can just run:
 
 ```bash
 go run main.go
@@ -45,3 +55,5 @@ On the end of the main.go run, you will have 2 output files: `buy_tickers.csv` a
 
 `buy_tickers.csv`: Result of Go scrapping.
 `result.csv`: Result of Python refinement.
+
+The `result.csv` is the file that will show you the Best Tickers for your pocket.
