@@ -57,3 +57,9 @@ On the end of the main.go run, you will have 2 output files: `buy_tickers.csv` a
 `result.csv`: Result of Python refinement.
 
 The `result.csv` is the file that will show you the Best Tickers for your pocket.
+
+### Libs Used:
+
+[yfinance](https://github.com/ranaroussi/yfinance)
+
+[finance go](https://github.com/piquette/finance-go)
